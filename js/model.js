@@ -8,10 +8,8 @@ class Task {
     this.name = newName;
   }
 
-  complete() {}
-
-  remove() {
-    //eliminar la tarea
+  complete() {
+    this.isComplete = true;
   }
 }
 
@@ -24,4 +22,8 @@ class List {
 	addTask(task){
 		this.tasks.push(task)
 	}
+
+  removeTask(i) {
+    this.tasks.splice(i, 1)
+  }
 }

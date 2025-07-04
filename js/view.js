@@ -13,4 +13,7 @@ function printTask(name){
   taskLi.appendChild(taskEl)
   taskLi.appendChild(taskRemove)
   taskList.appendChild(taskLi)
+  editTask()
+  completeTask()
+  removeTask()
 }
